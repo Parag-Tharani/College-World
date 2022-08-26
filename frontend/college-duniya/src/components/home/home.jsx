@@ -7,8 +7,8 @@ export const Home = () => {
     return (
         <>
         <Box className="home" >
-            <p className="quote" style={{fontSize:"17vw", marginTop:"15vh"}}>Know Your</p>
-            <p className="quote" style={{fontSize:"12vw", marginTop:"55vh", marginLeft:"45vw"}}>Right Path</p>
+            <p className="quote" style={{fontSize:"17vw", marginTop:"15vh", marginLeft:"2vw"}}>Know Your</p>
+            <p className="quote" style={{fontSize:"13vw", marginTop:"55vh", marginLeft:"45vw"}}>Right Path</p>
         </Box>
         </>
     )
