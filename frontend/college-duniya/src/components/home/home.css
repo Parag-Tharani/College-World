@@ -1,0 +1,10 @@
+.home{
+    height: 90vh;
+    background-image: linear-gradient(to right, rgb(135, 8, 8), black);
+}
+
+.quote{
+    position: absolute;
+    color: rgb(155, 45, 45);
+    font-family: 'Londrina Shadow', cursive;
+}
