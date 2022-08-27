@@ -1,5 +1,6 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Data } from './components/data/data';
+import { CollegeDetails } from './components/collegeDetails/collegeDetails';
 import { Home } from './components/home/home';
 import { Navbar } from './components/navbar/navbar';
 
@@ -9,8 +10,11 @@ export function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <Data />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/collegeDetails/:id' element={<CollegeDetails />}></Route>
+        <Route path='/studentDetails/:id' element={"#"}></Route>
+      </Routes>
     </div>
   );
 }

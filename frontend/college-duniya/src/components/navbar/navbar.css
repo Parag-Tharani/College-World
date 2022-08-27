@@ -41,12 +41,14 @@
 
 .navLink{
     cursor: pointer;
+    text-decoration: none;
     font-size: 17px;
     color: rgba(212, 202, 202, 0.872);
 }
 
 .navLink:hover{
     color: white;
+    text-decoration: underline;
 }
 
 .blackBack{

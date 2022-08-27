@@ -1,10 +1,12 @@
 import React from "react";
 import "./navbar.css"
 import { Box } from "@mui/material"
+import { useNavigate } from "react-router-dom";
 
 
 export const Navbar = () => {
 
+    const navigate = useNavigate()
     const [background , setBack] = React.useState(null)
 
     const changeBackground = () => {
@@ -28,9 +30,9 @@ export const Navbar = () => {
             <Box className="flexDiv">
                 
                 <Box className="flexDiv childNav">
-                <Box className="navLink">Search</Box>
-                <Box className="navLink">College List</Box>
-                <Box className="navLink">Visual Analysis</Box>
+                <Box><a className="navLink" onClick={() => navigate('/')} href="#collegeHeading">Search</a> </Box>
+                <Box><a className="navLink" onClick={() => navigate('/')} href="#searchInput">College List </a></Box>
+                <Box><a className="navLink" onClick={() => navigate('/')} href="#VisualData">Visual Analysis</a></Box>
                 </Box>
 
                 <button className="loginButton navLink">Login</button>
