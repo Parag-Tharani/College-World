@@ -3,7 +3,7 @@ import { Data } from './components/data/data';
 import { Home } from './components/home/home';
 import { Navbar } from './components/navbar/navbar';
 
-export const API_URL = "http://localhost:8080"
+export const API_URL = "https://college-world2.herokuapp.com"
 
 export function App() {
   return (

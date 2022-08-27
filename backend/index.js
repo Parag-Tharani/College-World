@@ -1,8 +1,10 @@
 const express = require("express")
 const cors = require("cors")
-const connectDatabase = require("./database")
+const {connectDatabase} = require("./database")
 const DataRoutes = require("./routes/data")
-const Port = 8080
+require('dotenv').config();
+
+const port = process.env.PORT 
 
 const app = express()
 
@@ -19,8 +21,8 @@ app.use(DataRoutes)
 
 connectDatabase()
 .then(() => {
-    app.listen(8080, () => {
-        console.log(`Database initialized at http://localhost:${Port}`)
+    app.listen(port, () => {
+        console.log(`${port} || Database initialized at http://localhost:${port}`)
     })
 })
 .catch((err) => console.log("Error Connecting Database"))

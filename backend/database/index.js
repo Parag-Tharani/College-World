@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
-
+require('dotenv').config();
 
 async function connectDatabase(){
-    const db_Url = "mongodb+srv://ParagTharani:2324password2324@cluster0.lbvtsq5.mongodb.net/CollegeWorld"
     // "mongodb://localhost:27017/CollegeWorld"
-
+    
     try {
+        const db_Url = process.env.db_Url
         await mongoose.connect(db_Url)
         console.log("Database Connection Successful.")
     } catch (error) {
@@ -13,4 +13,4 @@ async function connectDatabase(){
     }
 }
 
-module.exports = connectDatabase
+module.exports = {connectDatabase}
