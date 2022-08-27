@@ -1,0 +1,86 @@
+.searchDataDiv{
+    height: 1150px;
+    padding-top: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.collegeListheading{
+    width: 88vw;
+    margin: auto;
+    color: white;
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Londrina Shadow', cursive;
+
+}
+
+.search{
+    width: 90vw;
+    height: 60px;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.inputSearch{
+    width: 80%;
+    height: 35px;
+    font-size: 17px;
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+    margin-left: 10px;
+}
+.clearButton{
+    background-color: rgb(135, 8, 8);
+    color: white;
+    font-size: 17px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.noDataFound{
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.searchResult{
+    width: 70vw;
+    height: 800px;
+    padding: 2vw;
+    color: white;
+    overflow-y: scroll;
+}
+.searchResult::-webkit-scrollbar {
+    width: 12px;
+}  
+.searchResult::-webkit-scrollbar-thumb {
+    background: rgb(135, 8, 8); 
+    border-radius: 10px;
+}
+
+.dataBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height:170px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(46, 45, 45), rgb(22, 21, 21));
+}
+
+@media all and (max-width: 900px){
+    .searchDataDiv{
+        height: 800px;
+    }
+    .CollegeHeading{
+        font-size: 4vw;
+    }
+    .searchResult{
+        width: 100vw;
+        height: 500px;
+    }
+}

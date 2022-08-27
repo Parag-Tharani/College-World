@@ -9,3 +9,12 @@
   justify-content: space-around;
   align-items: center;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}  
+body::-webkit-scrollbar-thumb {
+  background: rgb(135, 8, 8); 
+  border-radius: 10px;
+}
