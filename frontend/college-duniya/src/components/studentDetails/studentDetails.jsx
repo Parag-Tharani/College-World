@@ -36,7 +36,7 @@ export const StudentDetails = () => {
                     
                     <Box sx={{textAlign:"left", marginTop:"50px"}}>
                         <li style={{fontSize:"20px", marginBottom:"15px"}}>Batch Year: {Data.year_of_batch}</li>
-                        <li style={{fontSize:"20px", marginBottom:"50px", textAlign:"justify"}}><u>Courses Offered:</u> <br/> --> {skills}</li>
+                        <li style={{fontSize:"20px", marginBottom:"50px", textAlign:"justify"}}><u>Skills:</u> <br/> --> {skills}</li>
                     </Box>
                 </Box>
             </Box>

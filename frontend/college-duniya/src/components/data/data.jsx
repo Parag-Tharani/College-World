@@ -167,7 +167,7 @@ async function FilterCollege(){
                                         <h1 className="CollegeHeading">{items.name}</h1>
                                         <p>{items.city} , {items.state}, {items.country}</p>
                                         </Box>
-                                        <button className="loginButton" onClick={() => navigate(`/collegeDetails/${items.college_id}`)} style={{cursor:"pointer", width:"150px", height:"50px",fontSize:'17px', color:"white"}}>More Details</button>
+                                        <button className="loginButton" onClick={() => navigate(`/collegeDetails/${items.college_id}`)} style={{cursor:"pointer", height:"50px",fontSize:'17px', color:"white"}}>More Details</button>
                                     </Box>
                                 )
                             })

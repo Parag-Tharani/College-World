@@ -9,7 +9,7 @@
     margin: auto;
     color: white;
     text-align: left;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Londrina Shadow', cursive;
 
 }
@@ -66,8 +66,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width:100%;
+    width:93%;
+    margin: auto;
     height:170px;
+    padding: 10px;
     border-radius: 10px;
     background-image: linear-gradient(to right, rgb(46, 45, 45), rgb(22, 21, 21));
 }
